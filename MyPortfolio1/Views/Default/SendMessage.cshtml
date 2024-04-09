@@ -1,0 +1,38 @@
+﻿@model MyPortfolio1.Models.TblMessages
+
+<div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form method="post" action="SendMessage"  novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control"  name="Name" placeholder="Adınız Soyadınız" required="required" data-validation-required-message="Lütfen adınızı soyadınızı yazın." />
+                                <p class="help-block"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control"  placeholder="Email adresiniz" name="Email" required="required" data-validation-required-message="Lütfen email adresinizi yazın." />
+                                <p class="help-block"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control"  name="Subject" placeholder="Konu" required="required" data-validation-required-message="Lütfen konuyu girin." />
+                                <p class="help-block"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control"  name="MessageContent" placeholder="Mesajınızı yazın..." required="required" data-validation-required-message="Lütfen mesajınızı yazın."></textarea>
+                                <p class="help-block"></p>
+                            </div>
+                            <div>
+                                <button class="btn" type="submit" >Gönder</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

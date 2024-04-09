@@ -1,0 +1,28 @@
+﻿@model MyPortfolio1.Models.TblAdmins
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+
+    <br />
+    <h3>Kullanıcı Giriş Sayfası</h3>
+    <br />
+
+    <form method="post">
+
+        <label>Kullancı Adı</label>
+        @Html.TextBoxFor(x => x.Username, new { @class = "form-control" })
+        <br />
+        <label>Şifre</label>
+        <input type="password" name="Password" class="form-control" />
+        <br />
+
+        <p class="text-danger">@Html.ValidationSummary()</p>
+        <button class="btn btn-outline-primary">Giriş Yap</button>
+
+
+    </form>
+</div>
